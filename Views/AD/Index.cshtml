@@ -1,0 +1,278 @@
+﻿@{
+    ViewData["Title"] = "AD MAN";
+}
+
+<h2>AD MAN Details</h2>
+
+<div class="container my-5">
+<div class="row">
+    <div class="col-auto">
+        From Date :
+    </div>
+    <div class="col-auto">
+        <input type="text" id="txtFromSelectedDate" name="SelectedDate" />
+    </div>
+    <div class="col-auto">
+        To Date :
+    </div>
+    <div class="col-auto">
+        <input type="text" id="txtToSelectedDate" name="SelectedToDate" />
+    </div>
+    @*  <div class="col-md-2">
+    <select name="products" class="form-control" asp-items="@ViewBag.cities"></select>
+    </div>*@
+    <div class="col-auto">
+        <input type="button" id="txtSearch" value="Search" name="SelectedToDate" />
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('#txtFromSelectedDate').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                format: "dd/mm/yyyy",
+                language: "tr"
+            });
+
+            $('#txtToSelectedDate').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                format: "dd/mm/yyyy",
+                language: "tr"
+            });
+        });
+
+
+    </script>
+    @if (ViewBag.Message != null)
+    {
+        <script type="text/javascript">
+            $(function () {
+                alert("@ViewBag.Message");
+            });
+        </script>
+    }
+
+</div>
+</div>
+<div class="container my-5" style="overflow-x:auto;">
+
+
+    
+
+    <div class="row my-5">
+        <div class="col-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">
+                            Customer
+                        </th>
+                        <th scope="col">
+                            IPv4 WAN
+                        </th>
+                        <th scope="col">
+                            IPv6 WAN
+                        </th>
+                        <th scope="col">
+                            Hastighed (Up/Down)/Speed ​​(Up/Down)
+
+                        </th>
+                        <th scope="col">
+                            QoS Profil
+
+                        </th>
+                        <th scope="col">
+                            UNI param
+
+                        </th>
+                        <th scope="col">
+                            VPI
+                        </th>
+                        <th scope="col">
+                            VCI
+                        </th>
+                        <th scope="col">
+                            VLAN
+                        </th>
+                        <th scope="col">
+                            Net adress
+                        </th>
+                        <th scope="col">
+                            Routing
+                        </th>
+                        <th scope="col">
+                            Priority
+                        </th>
+                        <th scope="col">
+                            Managed
+                        </th>
+                        <th scope="col">
+                            Inactive
+                        </th>
+                        <th scope="col">
+                            Netname
+                        </th>
+                        <th scope="col">
+                            Remove-private-AS
+                        </th>
+                        <th scope="col">
+                            AS-override
+                        </th>
+                        <th scope="col">
+                            MD5 Authentication
+                        </th>
+                        <th scope="col">
+                            Community
+                        </th>
+                        <th scope="col">
+                            Hello Timer
+                        </th>
+                        <th scope="col">
+                            AS-no
+                        </th>
+                        <th scope="col">
+                            MD5-password
+                        </th>
+                        <th scope="col">
+                            MPLS-VPN
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>mdo</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Mark</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>mdo</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Mark</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>mdo</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Mark</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>mdo</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Mark</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>mdo</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Mark</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
